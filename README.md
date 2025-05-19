@@ -140,7 +140,7 @@ poetry run python -m ragbot.cli chat --help
 ```
 
 ## Documentation
-Full documentation is available at [RAGBOT Doc](https://google.com).
+Full documentation is available at [RAGBOT Doc](https://rubenmartinez795.github.io/ragbot/).
 
 ## Development
 For development guidelines and instructions on how to contribute, see [DEVELOPMENT.md](DEVELOPMENT.md).
