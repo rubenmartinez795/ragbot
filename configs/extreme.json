@@ -1,0 +1,13 @@
+{
+  "llm_provider": "ollama",
+  "llm": "llama3",
+  "llm_temperature": 1.0,
+  "llm_top_p": 0.9,
+  "llm_top_k": 100,
+  "embeddings_provider": "google",
+  "embedding_model": "models/embedding-001",
+  "chunk_size": 1000,
+  "chunk_overlap": 200,
+  "search_type": "mmr",
+  "k_docs": 3
+}

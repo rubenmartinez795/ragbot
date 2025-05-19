@@ -1,0 +1,37 @@
+site_name: RAGBOT CLI
+repo_url: https://github.com/rubenmartinez795/ragbot
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys; sys.path.append(".")
+
+nav:
+  - Home: index.md
+  - CLI Overview: cli.md
+  - API Reference:
+    - CLI: reference/cli.md
+    - Chat: reference/chat.md
+    - Evaluate: reference/evaluate.md
+    - RAG: reference/rag.md
+    - Evaluation:
+      - Evaluation Chain: reference/evaluation/eval_chain.md
+      - Dataset Schema: reference/evaluation/dataset_schema.md
+      - Metrics:
+        - Base: reference/evaluation/metrics/base.md
+        - Answer Relevance: reference/evaluation/metrics/answer_relevance.md
+        - BLEU: reference/evaluation/metrics/bleu.md
+        - Context Relevance: reference/evaluation/metrics/context_relevance.md
+        - Faithfulness: reference/evaluation/metrics/faithfulness.md
+        - ROUGE: reference/evaluation/metrics/rouge.md
+        - Semantic Similarity: reference/evaluation/metrics/semantic_similarity.md
+    - Utilities:
+      - Utils: reference/utils/utils.md
