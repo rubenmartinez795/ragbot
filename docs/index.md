@@ -1,7 +1,10 @@
 # RAGBOT CLI
+By University of Cantabria.
 ```
-@author: Rubén Martínez Amodia
-@email:  ruben.martinezam@alumnos.unican.es
+@author Rubén Martínez Amodia
+@email  ruben.martinezam@alumnos.unican.es
+@supervisor Cristina Tirnauca
+@supervisor Marta Zorrilla
 ```
 `RAGBOT` is a command-line tool designed for running and evaluating Retrieval-Augmented Generation (RAG) chatbots. Developed as part of a bachelor thesis project, it supports the creation of intelligent virtual assistants through flexible experimentation and principled evaluation.
 
