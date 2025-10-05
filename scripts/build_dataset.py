@@ -1,4 +1,3 @@
-import pandas as pd
 from langsmith import Client
 
 from ragbot.utils import utils
@@ -10,23 +9,22 @@ def main():
 
     # QA
     inputs = [
-        "q1",
-        "q2",
-        "q3",
+        "What file formats does Laredo accept for the dataset?",
+        "How can I view the metrics of a trained model?",
+        "What happens if I select an incompatible algorithm with my problem type?",
+        "What do I do if the model takes too long to train?",
     ]
 
     outputs = [
-        "a1",
-        "a2",
-        "a3",
+        "The application accepts files in CSV format.",
+        "The metrics are displayed in a table after completing model training, including precision, recall, and F1-score.",
+        "If you select an incompatible algorithm, the system will display an error message indicating that you must choose another algorithm that is compatible with the selected problem type.",
+        "If the model takes too long to train: check that the dataset size is not excessive, try to reduce the model complexity or use a smaller dataset. Remember that there are models with a large number of parameters that require more time to train.",
     ]
 
     # Dataset
-    qa_pairs = [{"input": q, "output": a} for q, a in zip(inputs, outputs)]
-    df = pd.DataFrame(qa_pairs)
-
     client = Client()
-    dataset_name = "ds"
+    dataset_name = "ds-example"
 
     # Store
     dataset = client.create_dataset(

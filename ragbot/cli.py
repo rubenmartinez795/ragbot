@@ -21,7 +21,7 @@ def parse_chat_args(subparser: argparse.ArgumentParser):
         "--llm-provider", type=str, default="google", help="LLM provider"
     )
     subparser.add_argument(
-        "--llm", type=str, default="gemini-1.5-flash", help="LLM model"
+        "--llm", type=str, default="gemini-2.0-flash", help="LLM model"
     )
     subparser.add_argument(
         "--temperature", type=float, default=0.0, help="LLM temperature"
@@ -32,7 +32,10 @@ def parse_chat_args(subparser: argparse.ArgumentParser):
         "--emb-provider", type=str, default="google", help="Embeddings provider"
     )
     subparser.add_argument(
-        "--emb-model", type=str, default="models/embedding-001", help="Embeddings model"
+        "--emb-model",
+        type=str,
+        default="models/gemini-embedding-001",
+        help="Embeddings model",
     )
     subparser.add_argument(
         "--chunk-size", type=int, default=3000, help="Text splitter chunk size"

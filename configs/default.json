@@ -1,13 +1,13 @@
 {
   "llm_provider": "google",
-  "llm": "gemini-1.5-flash",
+  "llm": "gemini-2.0-flash",
   "llm_temperature": 0.0,
   "llm_top_p": 0.85,
   "llm_top_k": 40,
   "embeddings_provider": "google",
-  "embedding_model": "models/embedding-001",
-  "chunk_size": 1000,
-  "chunk_overlap": 200,
+  "embedding_model": "models/gemini-embedding-001",
+  "chunk_size": 3000,
+  "chunk_overlap": 600,
   "search_type": "similarity",
   "k_docs": 4
 }

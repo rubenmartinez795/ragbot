@@ -34,7 +34,7 @@ def evaluate(project_name: str, config_path: str, dataset_name: str):
 
     # Define LLM and embedding model for evalution
     llm = get_model("google", "gemini-2.0-flash", temperature=0.0)
-    embeddings = get_embeddings("google", "models/embedding-001")
+    embeddings = get_embeddings("google", "models/gemini-embedding-001")
 
     # Wrap the metrics for evaluation with LangSmith
     evaluators = [
