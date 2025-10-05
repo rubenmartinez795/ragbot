@@ -12,6 +12,9 @@ The tool is built on top of the LangChain framework and integrates with LangSmit
 experiment tracking and logging. Its primary goal is to facilitate the reproducible
 development and evaluation of RAG-based virtual assistants.
 
+## Quick Start
+See [QUICKSTART.md](QUICKSTART.md).
+
 ## Features
 
 - Interactive testing of RAG chatbot pipelines
