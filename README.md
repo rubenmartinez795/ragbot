@@ -15,6 +15,8 @@ development and evaluation of RAG-based virtual assistants.
 ## Quick Start
 See [QUICKSTART.md](QUICKSTART.md).
 
+Also, watch [this demo](demo_ragbot_cli.mp4) for a walkthrough of the features.
+
 ## Features
 
 - Interactive testing of RAG chatbot pipelines
